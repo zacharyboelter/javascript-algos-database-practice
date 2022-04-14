@@ -125,3 +125,17 @@ function checkSign(num) {
             : `zero`
 }
 
+
+
+function countdown(n) {
+    if (n < 1) {
+        return []
+    } else {
+        return [n].concat(countdown(n - 1))
+    }
+}
+
+function countDown(n) {
+    return (n < 1) ? []
+        : [n].concat(countdown(n - 1))
+}
