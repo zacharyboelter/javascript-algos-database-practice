@@ -98,9 +98,30 @@ function randomRange(myMin, myMax) {
 }
 
 // Use parseInt() in the convertToInteger function so it converts a binary number to an integer and returns it.
+//The parseInt() function parses a string and returns an integer. It takes a second argument for the radix, which specifies the base of the number in the string. The radix can be an integer between 2 and 36.
+// The radix variable says that 11 is in the binary system, or base 2. This example converts the string 11 to an integer 3.
 
 function convertToInteger(str, radix) {
     return parseInt(str, 2)
-  }
-  
-  convertToInteger("10011");
+}
+
+convertToInteger("10011");
+
+
+//   The syntax is a ? b : c, where a is the condition, b is the code to run when the condition returns true, and c is the code to run when the condition returns false.
+//   Use the conditional operator in the checkEqual function to check if two numbers are equal or not. The function should return either the string Equal or the string Not Equal.
+
+function checkEqual(a, b) {
+    return a === b ? `${a} is equal to ${b}` : `${a} is not equal to ${b}`
+}
+
+checkEqual(1, 2);
+
+//   In the checkSign function, use multiple conditional operators - following the recommended format used in findGreaterOrEqual - to check if a number is positive, negative or zero. The function should return positive, negative or zero.
+
+function checkSign(num) {
+    return (num > 0) ? `positive`
+        : (num < 0) ? `negative`
+            : `zero`
+}
+
