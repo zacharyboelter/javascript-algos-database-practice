@@ -96,3 +96,11 @@ function lookUpProfile(name, prop) {
 function randomRange(myMin, myMax) {
     return Math.floor(Math.random() * (myMax - myMin + 1) + 1)
 }
+
+// Use parseInt() in the convertToInteger function so it converts a binary number to an integer and returns it.
+
+function convertToInteger(str, radix) {
+    return parseInt(str, 2)
+  }
+  
+  convertToInteger("10011");
